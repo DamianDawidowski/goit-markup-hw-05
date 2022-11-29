@@ -158,8 +158,8 @@ align-items: flex-start;
 .modal-button-x {
 font-size: 0.875rem;
 line-height: 1.0;
-background-color: white;
-background-color: var(--color-white)
+/*background-color: white;*/
+background-color: var(--color-white);
 border: 0;
 }
 
