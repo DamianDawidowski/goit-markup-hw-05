@@ -159,12 +159,14 @@ align-items: flex-start;
 font-size: 0.875rem;
 line-height: 1.0;
 border: 0;
+background-color: var(--color-white);
 }
 
 .modal-icon {
   color: inherit;
   fill: var(--color-black3);
   margin: 0;
+  background-color: var(--color-white);
 }
 
 .placeholder-div {
