@@ -8,6 +8,7 @@
   --color-black: #212121;
   --color-black2: #0000001f;
   --color-black3: #000000;
+  --color-black4: #0000001a;
   --color-white: #fff;
   --color-white2: #f5f4fa;
 }
@@ -123,7 +124,7 @@ ul {
   left 33.5rem;
   width: 33rem;
   height: 36.3125rem;
-  background-color: teal;
+  background-color: var(--color-white);
   position: fixed;
   z-index: 1;
   transition-property: visibility, opacity, transform;
@@ -132,6 +133,7 @@ ul {
   opacity: 1;
   visibility: visible;
   display: block;
+  border-radius: 0.25rem;
 }
 
 .is-hidden {
@@ -148,7 +150,9 @@ align-items: flex-start;
 }
 
 .modal-button-div2 {
-  padding: 0.5rem 0.681875rem ;
+  padding: 0.25rem 0.3125rem ;
+  border-radius: 50%;
+  border: 1px solid var(--color-black4);
 }
 
 .modal-button-x {
