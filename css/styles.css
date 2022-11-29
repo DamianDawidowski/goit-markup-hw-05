@@ -165,8 +165,8 @@ background-color: var(--color-white);
 .modal-icon {
   color: inherit;
   fill: var(--color-black3);
-  margin: 0;
   background-color: var(--color-white);
+    margin: 0;
 }
 
 .placeholder-div {
