@@ -160,11 +160,13 @@ font-size: 0.875rem;
 line-height: 1.0;
 border: 0;
 background-color: var(--color-white);
+border: 0;
 }
 
 .modal-icon {
   color: inherit;
   fill: var(--color-black3);
+  border: 0;
   background-color: var(--color-white);
     margin: 0;
 }
