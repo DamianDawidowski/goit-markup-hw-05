@@ -7,6 +7,7 @@
   --color-blue: #2196f3;
   --color-black: #212121;
   --color-black2: #0000001f;
+  --color-black3: #000000;
   --color-white: #fff;
   --color-white2: #f5f4fa;
 }
@@ -154,10 +155,11 @@ align-items: flex-start;
 font-size: 0.875rem;
 line-height: 1.0;
 border: 0;
-
 }
 
-
+.modal-icon {
+  fill: var(--color-black3)
+}
 
 .placeholder-div {
   width: 100%;
