@@ -158,6 +158,7 @@ border: 0;
 }
 
 .modal-icon {
+  color: inherit;
   fill: var(--color-black3)
 }
 
