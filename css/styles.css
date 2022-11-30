@@ -36,6 +36,11 @@ ul {
   padding: 5.875rem 0;
 }
 
+.transition {
+
+}
+
+
 .section-solutions-background {
   background-color: var(--color-grey3);
 }
@@ -363,13 +368,11 @@ ul {
 .footer-div4 {
   background-color: var(--color-grey5);
   border-radius: 50%;
-  transition: 0.3s;
 }
 
 .ourteam-div4 {
   border-radius: 50%;
-  transition: 0.3s;
-}
+ }
 
 .ourteam-div4:hover,
 .ourteam-div4:focus,
