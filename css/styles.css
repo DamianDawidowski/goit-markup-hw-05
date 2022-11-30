@@ -126,18 +126,18 @@ ul {
 .modal {
   /* top: 31.96rem;
   left: 50rem;*/
-  top: 31.96rem;
+  top: 32.5rem;
   left: 50%;
 
-  width: 33rem;
-  height: 36.3125rem;
-  background-color: var(--color-white);
+  width: 100rem;
+  height: 65rem;
+  background-color: var(--color-black4);
   position: fixed;
   z-index: 1;
   transition-property: visibility, opacity, transform;
   /*transition-duration 2s;*/
   transform: translateX(-50%) translateY(-50%) scale(1) rotate(720deg) skew(0deg, 0deg);
-  opacity: 1;
+  /*opacity: 0.1;*/
   visibility: visible;
   display: block;
   border-radius: 0.25rem;
@@ -151,12 +151,21 @@ ul {
   transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg) skew(40deg, 40deg);
 }
 
-.modal-button-div_x {
+.modal-button-div1 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   padding: 0.25rem 0.25rem 0 0;
   margin: 0 auto;
+  background-color: var(--color-white);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 33rem;
+  height: 36.3125rem;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  z-index: 2;
 }
 
 .modal-button-div2 {
