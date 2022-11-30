@@ -37,9 +37,8 @@ ul {
 }
 
 .transition {
-
+  transition-duration: 250ms;
 }
-
 
 .section-solutions-background {
   background-color: var(--color-grey3);
@@ -372,7 +371,7 @@ ul {
 
 .ourteam-div4 {
   border-radius: 50%;
- }
+}
 
 .ourteam-div4:hover,
 .ourteam-div4:focus,
@@ -386,7 +385,6 @@ ul {
   max-height: 2.75rem;
   color: var(--color-grey4);
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .footer-div5 {
@@ -460,7 +458,7 @@ ul {
   border: 0;
   border-radius: 5px;
   background-color: var(--color-white2);
-  transition: 0.3s;
+  transition-duration: 250ms;
 }
 
 .buttons .button:hover,
@@ -491,7 +489,6 @@ ul {
   border: 1px solid var(--color-grey4);
   border-radius: 4px;
   color: var(--color-grey4);
-  transition: 0.3s;
 }
 
 .ourclients-div1 {
@@ -552,10 +549,6 @@ ul {
 
 .highlight-a:visited {
   color: var(--color-black);
-}
-
-.highlight {
-  transition: 0.3s;
 }
 
 .highlight:focus,
