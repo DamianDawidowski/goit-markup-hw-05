@@ -178,8 +178,7 @@ ul {
 .modal-button-x {
   font-size: 0.875rem;
   line-height: 1;
-  /*background-color: white;*/
-  background-color: var(--color-white);
+   background-color: var(--color-white);
   border: 0;
   padding-top: 0.125rem;
 }
@@ -591,9 +590,9 @@ ul {
   color: var(--color-blue);
 }
 
-.highlight-a::after {
+.underline::after {
   content: '';
-  width: 0rem;
+  width: 3.3125rem;
   height: 0.25rem;
   position: absolute;
   background: var(--color-blue);
@@ -601,11 +600,6 @@ ul {
   top: 76px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.highlight-a:hover::after,
-.highlight-a:focus::after {
-  width: 3.3125rem;
 }
 
 .portfolio-li {
@@ -621,15 +615,13 @@ ul {
 
 .portfolio-div {
   overflow: hidden;
-  /*    height 100%;*/
-  position: relative;
+   position: relative;
 }
 
 .portfolio-window {
   position: absolute;
   width: 23.125rem;
   height: 18.375rem;
-  /*height: 0rem;*/
   background-color: var(--color-blue);
   font-size: 1.125rem;
   line-height: 1.555;
