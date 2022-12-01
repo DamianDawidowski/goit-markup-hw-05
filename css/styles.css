@@ -38,6 +38,7 @@ ul {
 
 .transition {
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-solutions-background {
@@ -170,9 +171,8 @@ ul {
 }
 
 .modal-button-div2 {
-padding: 0.5rem;
+  padding: 0.5rem;
 }
-
 
 .modal-button-div3 {
   padding: 0.25rem 0.3125rem 0.125rem;
@@ -474,6 +474,7 @@ padding: 0.5rem;
   border-radius: 5px;
   background-color: var(--color-white2);
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons .button:hover,
@@ -573,8 +574,37 @@ padding: 0.5rem;
   color: var(--color-blue);
 }
 
+.highlight-a::after {
+  content: '';
+  width: 0rem;
+  height: 0.25rem;
+  position: absolute;
+  background: var(--color-blue);
+  transform: translateX(-100%) translateY(20%);
+  top: 76px;
+}
+
+.highlight-a:hover::after {
+  width: 3.3125rem;
+  position: absolute;
+}
+
+.highlight-a::after {
+  /*content: '';
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  bottom -2px;
+  background: #f38181;
+  transition: width 0.5s, left 0.5s;
+  right: 0;
+  display: inline-block;
+  transform: scaleX(1);*/
+}
+
 .portfolio-li {
-  transition: 0.5s;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-li:hover,
@@ -590,7 +620,6 @@ padding: 0.5rem;
 .icon-address {
   fill: currentColor;
   color: inherit;
-  transition: 0.3s;
 }
 
 .icon-address:hover,
@@ -603,7 +632,6 @@ padding: 0.5rem;
   align-items: center;
   color: var(--color-grey2);
   fill: var(--color-grey2);
-  transition: 0.3s;
 }
 
 .div-icon:hover,
@@ -614,7 +642,6 @@ padding: 0.5rem;
 .address-icon {
   padding-left: 0.625rem;
   color: inherit;
-  transition: 0.35s;
 }
 
 .address-icon:hover,
@@ -625,4 +652,28 @@ padding: 0.5rem;
 .placeholder-icon {
   padding: 1.5625rem 6.25rem;
   background-color: var(--color-white2);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
