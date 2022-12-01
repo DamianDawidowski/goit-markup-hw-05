@@ -4,6 +4,7 @@
   --color-grey3: #2f303a;
   --color-grey4: #afb1b8;
   --color-grey5: #ffffff1a;
+  --color-grey6: #2f303acc;
   --color-blue: #2196f3;
   --color-black: #212121;
   --color-black2: #0000001f;
@@ -256,7 +257,8 @@ ul {
   cursor: pointer;
 }
 
-.buttons .button:hover {
+.buttons .button:hover,
+.buttons .button:focus {
   color: var(--color-white);
   background-color: var(--color-blue);
 }
@@ -337,6 +339,27 @@ ul {
   font-weight: 700;
   padding-bottom: 3.125rem;
   text-align: center;
+}
+
+.ourservices-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.ourservices-p {
+  position: absolute;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding: 1.6875rem 0;
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--color-grey6);
+  width: 100%;
 }
 
 .outeam-div1 {
@@ -580,21 +603,9 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.highlight-a:hover::after {
+.highlight-a:hover::after,
+.highlight-a:focus::after {
   width: 3.3125rem;
-}
-
-.highlight-a::after {
-  /*content: '';
-  width: 10px;
-  height: 2px;
-  position: absolute;
-  bottom -2px;
-  background: #f38181;
-  transition: width 0.5s, left 0.5s;
-  right: 0;
-  display: inline-block;
-  transform: scaleX(1);*/
 }
 
 .portfolio-li {
@@ -609,16 +620,16 @@ ul {
 }
 
 .portfolio-div {
-    overflow: hidden;
-    height 100%;
+  overflow: hidden;
+  /*    height 100%;*/
   position: relative;
 }
 
 .portfolio-window {
-  position:absolute ;
+  position: absolute;
   width: 23.125rem;
   height: 18.375rem;
- /*height: 0rem;*/
+  /*height: 0rem;*/
   background-color: var(--color-blue);
   font-size: 1.125rem;
   line-height: 1.555;
@@ -626,16 +637,14 @@ ul {
   color: var(--color-white);
   letter-spacing: 0.03em;
   transition-property: transform;
-  transform: translatey(100%);
-   }
+  transform: translatey(138%);
+}
 
 .portfolio-li:hover .portfolio-window,
-.portfolio-li:focus .portfolio-window{
- /* height: 18.375rem;*/
+.portfolio-li:focus .portfolio-window {
   opacity: 0.9;
-  transform  scaleY(1);
   transform: translatey(0);
- }
+}
 
 .portfolio-img {
   margin-bottom: -4px;
@@ -697,7 +706,8 @@ ul {
   transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover::after {
+.hover-underline-animation:hover::after,
+.hover-underline-animation:focus::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
