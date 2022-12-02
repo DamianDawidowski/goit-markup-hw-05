@@ -173,14 +173,15 @@ ul {
   padding: 0.25rem 0.3125rem 0.125rem;
   border-radius: 50%;
   border: 1px solid var(--color-black4);
-}
+  }
 
 .modal-button-x {
   font-size: 0.875rem;
   line-height: 1;
-   background-color: var(--color-white);
+  background-color: var(--color-white);
   border: 0;
   padding-top: 0.125rem;
+  cursor: pointer;
 }
 
 .modal-icon {
@@ -614,8 +615,8 @@ ul {
 }
 
 .portfolio-div {
+  position: relative;
   overflow: hidden;
-   position: relative;
 }
 
 .portfolio-window {
@@ -629,7 +630,7 @@ ul {
   color: var(--color-white);
   letter-spacing: 0.03em;
   transition-property: transform;
-  transform: translatey(138%);
+  transform: translatey(100%);
 }
 
 .portfolio-li:hover .portfolio-window,
